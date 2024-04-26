@@ -6,6 +6,7 @@ public class Escola {
     
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         alunos alunos = new alunos();
+        funcionarios funcionarios = new funcionarios();
 
         System.out.println("Digite o nome do aluno: ");
         alunos.NomeAluno = scanner.nextLine();
@@ -41,6 +42,31 @@ public class Escola {
 
         alunos.MostrarMedia(0, 0, 0);
         System.out.println("A média do aluno é: " + alunos.Media);
+        System.out.println("");
+
+        System.out.println("Cadastro de Funcionários");
+        System.out.println("");
+
+        System.out.println("Digite o nome do funcionário: ");
+        funcionarios.NomeFuncionario = scanner.nextLine();
+        System.out.println("");
+
+        System.out.println("Digite o Sobrenome: ");
+        funcionarios.SobrenomeFuncionario = scanner.nextLine();
+        System.out.println("");
+
+        System.out.println("Digite o setor de lotação: ");
+        funcionarios.SetorFuncionario = scanner.nextLine();
+        System.out.println("");
+
+        System.out.println("Digite a matrícula do funcionário com dígito: ");
+        funcionarios.MatriculaFuncionario = scanner.nextLine();
+        System.out.println();
+
+        //String MostrarResultadoFuncionario = funcionarios
+        
+        //System.out.println(MostrarResultadoFuncionario);
+        //System.out.println("");
 
     }
 }

@@ -21,6 +21,6 @@ public class alunos {
         nota02 = Nota02;
         nota03 = Nota03;
         
-        Media = nota01 + nota02 + nota03 / 3;
+        Media = (nota01 + nota02 + nota03) / 3;
     }
 }
